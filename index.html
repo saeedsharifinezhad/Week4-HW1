@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- main content -->
+    <main class="main-content">
+        <!-- section-collaboration form -->
+        <section class="sections">
+            <h2 class="section-title">درخواست همکاری</h2>
+            <div class="collaboration-form">
+                <form class="collaboration-form" action="" method="get">
+                    <div>
+                        <label class="fields-title" for="full-name">نام و نام خانوادگی <span
+                                class="required">(اجباری)</span></label>
+                        <input class="normal-field" type="text" name="full-name" id="full-name" required>
+                    </div>
+                    <div>
+                        <label class="fields-title" for="email">ایمیل <span class="required">(اجباری)</span></label>
+                        <input class="normal-field" type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label class="fields-title" for="full-name">تلفن <span class="optional">(اختیاری)</span></label>
+                        <input class="normal-field" type="text" name="full-name" id="full-name">
+                    </div>
+                    <fieldset class="time-interest">
+                        <legend class="fields-title">بازه ترجیحی <span class="optional">(اجباری: صفر تا سه مورد)</span>
+                        </legend>
+                        <div class="input-row">
+                            <input type="radio" id="morning" name="time" value="morning">
+                            <label for="صبح">صبح</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" id="afternoon" name="time" value="afternoon" required>
+                            <label for="عصر">عصر</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="activity-interest">
+                        <legend class="fields-title">علاقه به فعالیت‌ها <span class="optional">(اختیاری: صفر تا سه
+                                مورد)</span></legend>
+                        <div class="input-row">
+                            <input type="checkbox" id="education" name="آموزش" value="education">
+                            <label for="آموزش">آموزش</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="checkbox" id="event" name="رویداد" value="event">
+                            <label for="رویداد">رویداد</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="checkbox" id="library" name="کتابخانه" value="library">
+                            <label for="کتابخانه">کتابخانه</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label class="fields-title" for="experience-level">سطح تجربه <span
+                                class="required">(اجباری)</span></label>
+                        <select class="normal-field" name="experience-level" id="experience-level" required>
+                            <option class="select-option" value="">سطح تجربه را انتخاب کنید</option>
+                            <option class="select-option" value="new">تازه کار</option>
+                            <option class="select-option" value="some">تجربه محدود</option>
+                            <option class="select-option" value="experienced">با تجربه</option>
+                        </select>
+                    </div>
+                    <div class="text-box">
+                        <label class="textbox fields-title" for="textbox">توضیح <span
+                                class="optional">(اختیاری)</span></label>
+                        <textarea class="normal-field" name="textbox" id="textbox" rows="4"></textarea>
+                        <p class="textbox-desc">حداکثر 300 نویسه (تایپ یا paste)</p>
+                    </div>
+                    <div class="agree-rules">
+                        <div class="agree-checkbox">
+                            <input type="checkbox" name="agree-rules" id="agree-rules" required>
+                            <label class="fields-title" for="agree-rules">قوانین همکاری را می‌پذیرم <span
+                                    class="required">(اجباری)</span></label>
+                        </div>
+                        <p class="rules-text"> احترام به مراجعه کنندگان، حفظ اطلاعات شخصی آانان و هماهنگی با مسئول
+                            فعالیت پیش از حضور لازم است</p>
+                    </div>
+                    <button class="submit-button" type="submit">ارسال درخواست آزمایشی</button>
+                </form>
+            </div>
+        </section>
+        <section class="sections">
+            <h2 class="section-title">تماس</h2>
+            <a href="mailto:volunteer@example.com" class="email-link">volunteer@example.com</a>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">خانه فرهنگ روشن — نسخه آموزشی</p>
+    </footer>
 </body>
 </html>

@@ -138,8 +138,6 @@ main {
     padding: 12px;
     border: solid 1px #CED6E1;
     border-radius: 4px;
-}
-
 .collaboration-form {
     display: flex;
     flex-direction: column;
@@ -233,4 +231,3 @@ footer {
     color: #2C4A6E;
     border-top: solid 1px #6d6d6d38;
     padding: 15px 0;
-}

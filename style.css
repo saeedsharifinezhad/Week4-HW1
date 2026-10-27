@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "iranyekanx";
+    src:
+        url(fonts/IRANYekanXVFaNumVF.woff2) format("woff2")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iranyekanx;
+}
+
+body {
+    background-color: #F3F5F8;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B314D;
+    color: white;
+    padding: 12px;
+}
+
+.page-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-link {
+    color: white;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+}
+
+.sections {
+    background-color: white;
+    padding: 12px;
+    border: solid 1px #ccd4dd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+.intro-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1B314D;
+}
+
+.intro-paragraph {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1B314D;
+}
+
+.activities-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-right: solid 2px #1B314D;
+    background-color: #F4F6F9;
+}
+
+.activities-card h3 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.activities-card p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.time-table {
+    width: 100%;
+    text-align: right;
+    border: solid 1px #ccd4dd;
+
+}
+
+.time-table caption {
+    text-align: right;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.cell-head {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #DCE6F1;
+}
+
+.cell-data {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.times-description {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1B314D;
+}
+
+.activity-interest,
+.time-interest {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    border: solid 1px #CED6E1;
+    border-radius: 4px;
+}
